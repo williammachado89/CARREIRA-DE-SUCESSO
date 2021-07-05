@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  photos = [];
+  http = new import { Injectable } from '@angular/core';
+
+  @Injectable({providedIn: 'root'})
+  export class ServiceNameService {
+    constructor(private httpClient: HttpClient) { }
+
+  };
+
 }
